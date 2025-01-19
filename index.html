@@ -244,32 +244,17 @@
     </div>
 
     <div class="counter">
-        <p>Visited my site:</p>
-        <div id="visitor-count"><span>0</span></div>
+        <p>Visited my site</p>
+		<!-- Счётчик сделан тут - moe-counter.glitch.me -->
+		<img src="https://count.getloli.com/get/@:chopsicks.github.io?theme=rule34" alt=":chopsicks.github.io" />
+		<!-- ПОМЕНЯЙ parad1st.github.io В ССЫЛКЕ НА СВОЁ -->
     </div>
 
     <div class="footer">
         <p>Created by Frizzy Low | <a href="https://github.com/Chopsicks" target="_blank">GitHub</a></p>
     </div>
 
-    <script>
-    let visitCount = localStorage.getItem('visitCount') || 0;
-    visitCount++;
-    localStorage.setItem('visitCount', visitCount);
-    const countElement = document.getElementById('visitor-count').querySelector('span');
-    let startValue = 0;
-    let endValue = visitCount;
-    let duration = 2500;
-    let stepTime = Math.abs(Math.floor(duration / (endValue - startValue)));
 
-    setTimeout(function() {
-        let counter = setInterval(function() {
-            startValue++;
-            countElement.textContent = startValue;
-            if (startValue === endValue) clearInterval(counter);
-        }, stepTime);
-    }, 2500);
-    </script>
 
 </body>
 </html>
